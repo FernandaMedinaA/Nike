@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    text-align: center;
+}
+.ancho{
+    max-width: 1200px;
+    margin: auto;
+}
+.header_principal, .header_secundario{
+    background-color: white;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    max-width: 1100px;
+}
+.header_secundario{
+    background-color: white;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-between;
+}
+.cuadro1{
+    border: 1px rgba(58, 56, 56, 0.411) solid;
+    display: flex;
+    width: 70px;
+    padding: 8px;
+    justify-content: center;
+    margin-right: 10px;
+}
+.cuadro2{
+    border: 1px rgba(58, 56, 56, 0.411) solid;
+    width: 70px;
+    padding: 8px;
+    justify-content: center;
+    margin-right: 10px;
+}
+.basquetbolista{
+    border: 1px rgba(58, 56, 56, 0.411) solid;
+    padding: 6px;
+    justify-content: center;
+    margin-right: 40%;
+}
+.basquetbolista img{
+    width: 80%;
+}
+.unete{
+    border: 1px red solid;
+    width: 300px;
+    display: inline-block;
+}
+.menu ul {
+    list-style: none;
+    max-width: 500px;
+}
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a {
+    font-size: 12px;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+}
+.menu ul li a img{
+    width: 70%;
+}
+.menu2 ul {
+    list-style: none;
+    max-width: 650px;
+}
+.menu2 ul li {
+    display: inline-block;
+}
+.menu2 ul li a {
+    font-size: 10px;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 5px;
+
+}
+.menu2 ul li a img{
+    width: 70%;
+}
+.buscar{
+    border: 1px rgba(58, 56, 56, 0.411) solid;
+    font-size: 12px;
+    padding: 4px 30px;
+}
+.hr{
+    background-color: rgb(231, 227, 227);
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+.creelo_imgs{
+    display: flex;
+    flex-direction: row;
+}
+.creelo_imgs img{
+    width: 100%;
+}
+.creelo_msj{
+    height: 150px;
+}
+.creelo_msj h1{
+    margin-top: 40px;
+    font-size: 22px;
+}
+.creelo_msj p{
+    font-size: 12px;
+    font-weight: 550;
+}
+.creelo_msj a{
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.banner{
+    display: flex;
+    flex-direction: row;
+}
+.banner img{
+    width: 100%;
+}
+.banner1 img, .banner2 img{
+    height: 100%;
+}
+.diseñado_volar{
+    height: 200px;
+}
+.diseñado_volar h1{
+    margin-top: 40px;
+    font-size: 22px;
+}
+.diseñado_volar p{
+    font-size: 12px;
+    font-weight: 550;
+}
+.diseñado_volar a {
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.slidefoto{
+    background-image: url(imagenes/calltoaction.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+}
+.contenedor_slide{
+    text-align: left;
+    padding-left: 5%;
+}
+.contenedor_slide h1{
+    color: white;
+    padding-top: 6%;
+    text-transform: uppercase;
+    font-size: 130%;
+}
+.contenedor_slide p{
+    color: white;
+    padding-top: 10px;
+}
+.contenedor_slide a{
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.pie{
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: left;
+    padding: 5%;
+
+}
+.pie ul {
+    list-style: none;
+    max-width: 500px;
+}
+@media screen and (max-width:480px){
+    .cuadro1,.cuadro2,.basquetbolista{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .header_secundario{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu2 ul {
+        list-style: none;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .menu2 ul li{
+        width: 100%;
+        background-color: rgb(29, 27, 27);
+    }
+    .menu2 ul li a{
+        display: block;
+        color: white;
+    }
+    .buscar{
+        width: 100%;
+        border: 1px #333 solid;
+        color: #333;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .creelo_imgs{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .diseñado_volar a{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 50%;
+        margin-bottom: 5px;
+    }
+    .slidefoto{
+        display: flex;
+        flex-wrap: wrap;
+        background-size: cover;
+        height: 300px;
+        background-position:left;
+        margin-top: 40px;
+    }
+    .contenedor_slide p{
+        font-size: 14px;
+    }
+    .contenedor_slide a{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 50%;
+        margin: auto;
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+    .pie ul li{
+        border: 1px white solid;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+}
